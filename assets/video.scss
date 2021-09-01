@@ -1,0 +1,51 @@
+.video {
+  overflow: hidden;
+  height: 40rem;
+  background-color: var(--white);
+
+  &__bi {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url('~@assets/preview.jpg');
+    background-color: var(--white);
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+  }
+
+  .bi_video {
+    height: auto;
+    width: 100%;
+    display: none;
+  }
+
+  &__content {
+    color: var(--blue-dark);
+    position: relative;
+    z-index: 1;
+  }
+
+  &__play {
+    display: inline-block;
+    width: 6rem;
+    cursor: pointer;
+    height: 6rem;
+    background-image: url('~@assets/play.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 2rem;
+    transition: 0.2s ease-in;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  video.bi_video {
+    width: 100%;
+  }
+}

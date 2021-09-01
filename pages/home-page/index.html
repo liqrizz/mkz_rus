@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>McKenZee - статистическое агентство</title>
+</head>
+<body>
+
+<nav class="nav flex flex-ai-sch">
+    <div class="nav__left-side col-1_8">
+        <div class="nav__logo-wrapper flex">
+            <a class="nav__logo-link" href="/">
+                <img class="nav__logo" src="~@assets/logo.svg" alt="mcKenZee logo">
+            </a>
+        </div>
+    </div>
+    <div class="nav__right-side col-2_2 flex flex-jc-fe flex-ai-sch">
+        <ul class="nav__items flex flex-ai-c">
+            <li class="mobile_show nav__close-item">
+                <div class="nav__close-wrapper">
+                    <img class="nav__logo" src="~@assets/logo.svg" alt="mcKenZee logo">
+                    <span class="nav__close-button">
+                        <span class="mkz mkz-close_mkz"></span>
+                    </span>
+                </div>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="retail-audit.html">розничный аудит</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="micro-regions.html">микрорегионы</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="about-us.html">о нас</a>
+            </li>
+            <li class="nav__item select-lang mobile_hide">
+                <span class="nav__link relative">
+                    ру
+                    <span class="mkz mkz-down"></span>
+                    <ul class="lang-list">
+                        <li class="lang-list__item">
+                            <a href="/">русский</a>
+                        </li>
+                        <li class="lang-list__item">
+                            <a href="/">english</a>
+                        </li>
+                    </ul>
+                </span>
+            </li>
+
+            <li class="nav__item mobile_show">
+                <a class="nav__link" href="contact-us.html">контакты</a>
+            </li>
+
+            <li class="nav__item select-lang select-lang_mobile mobile_show">
+                <span class="nav__link relative">
+                    русский
+                    <span class="mkz mkz-down"></span>
+                    <ul class="lang-list">
+                        <li class="lang-list__item">
+                            <a href="/">русский</a>
+                        </li>
+                        <li class="lang-list__item">
+                            <a href="/">english</a>
+                        </li>
+                    </ul>
+                </span>
+            </li>
+        </ul>
+        <a class="nav__link nav__link_contact flex flex-ai-c" href="contact-us.html">контакты</a>
+        <i class="mkz mkz-burger mobile_show flex flex-ai-c"></i>
+    </div>
+</nav>
+
+<section class="main flex">
+    <div class="section-left-side col-1_8 tablet-full flex flex-jc-c flex-ai-c">
+        <div class="section-left-side__content-wrapper">
+            <h1 class="section-left-side__title big">точные данные важны!</h1>
+
+            <p class="section-left-side__info">
+                оцифрованный данные из более 4000 <span class="mobile_show">&nbsp;</span><br class="mobile_show">
+                продовольственных торговых точек по всему <span class="mobile_show">&nbsp;</span><br class="mobile_show">
+                Казахстану — это основной строительный блок <span class="mobile_show">&nbsp;</span><br class="mobile_show">
+                всего, что мы делаем в аналитике
+            </p>
+
+            <a href="about-us.html" class="button button_blue">
+                о нас
+                <i class="mkz mkz-arrow-left"></i>
+            </a>
+        </div>
+    </div>
+    <div class="main__right-side col-2_2 tablet-none flex flex-jc-c flex-ai-c">
+        <video autoplay muted id="mainVideo" data-src="~@assets/main_anim_2.mp4">
+            <source src="~@assets/main_anim_1.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+
+<section class="audit relative">
+    <img class="decor audit__decor audit__decor_small" src="~@assets/decor.svg" alt="decor.svg">
+    <img class="decor audit__decor audit__decor_big" src="~@assets/decor.svg" alt="decor.svg">
+    <div class="audit_wrapper audit_wrapper_first flex">
+        <a class="audit__mobile-button button button_yellow mobile_show" href="retail-audit.html">
+            подробнее
+            <i class="mkz mkz-arrow-left"></i>
+        </a>
+        <div class="audit__left-side audit__left-side_padding col-2 flex flex-jc-c">
+            <img src="~@assets/graph.svg" alt="graph.svg">
+        </div>
+        <div class="audit__right-side col-2 flex flex-jc-c flex-ai-c">
+            <div class="audit__content flex flex-fd-c flex-ai-fe">
+                <h1 class="audit__title">розничный аудит</h1>
+                <p class="audit__info">точные и независимые данные о реальных продажах
+                    товаров повседневного спроса (FMCG) </p>
+                <a class="button button_yellow mobile_hide" href="retail-audit.html">
+                    подробнее
+                    <i class="mkz mkz-arrow-left"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="audit_wrapper flex">
+        <div class="audit__left-side col-1_7 flex flex-jc-c">
+            <div class="audit__content">
+                <h1 class="audit__title">микрорегионы</h1>
+                <p class="audit__info microregions">
+                    розничный аудит на уровне микро-<span class="mobile_hide">&nbsp;</span><br class="mobile_hide">
+                    регионов в городах Алматы и Нур-Султан
+                </p>
+                <a class="button button_yellow mobile_hide" href="micro-regions.html">
+                    learn more
+                    <i class="mkz mkz-arrow-left"></i>
+                </a>
+            </div>
+        </div>
+        <div class="audit__right-side col-2_3 flex flex-jc-c flex-ai-c">
+            <div class="cities flex">
+                <div class="cities__item cities__item_margin-right relative">
+                    <div class="cities__item-mask flex flex-jc-c flex-ai-fe">
+                        <span>hover to see</span>
+                    </div>
+                    <img class="mobile_hide" hover data-src="~@assets/almaty.gif" src="~@assets/alma-static.gif"
+                         alt="almaty.gif">
+                    <img class="mobile_show" src="~@assets/almaty_mobile.gif" alt="almaty map">
+                    <span class="cities__title">Алматы</span>
+                </div>
+                <div class="cities__item relative">
+                    <div class="cities__item-mask flex flex-jc-c flex-ai-fe">
+                        <span>hover to see</span>
+                    </div>
+                    <img class="mobile_hide" hover data-src="~@assets/nur-sultan.gif" src="~@assets//nur-static.gif"
+                         alt="nur-sultan.gif">
+                    <img class="mobile_show" src="~@assets/nur_mobile.gif" alt="nur-sultan.gif">
+                    <span class="cities__title">Нур-Султан</span>
+                </div>
+            </div>
+        </div>
+        <a class="button button_yellow mobile_show" href="micro-regions.html">
+            learn more
+            <i class="mkz mkz-arrow-left"></i>
+        </a>
+    </div>
+</section>
+
+<section class="geo">
+    <h1 class="geo__title">география исследований</h1>
+    <div class="geo__wrapper flex">
+        <div class="geo__item col-3 relative">
+            <div class="geo__item-content flex flex-ai-c flex-jc-c flex-fd-c">
+                <img src="images/kazakhstan.svg" alt="">
+                <h2>Казахстан</h2>
+            </div>
+            <div class="geo__shadow"></div>
+        </div>
+        <div class="geo__item col-3 relative">
+            <div class="geo__item-content relative flex flex-ai-c flex-jc-c flex-fd-c">
+                <img src="images/kyrgyzstan.svg" alt="">
+                <h2>Кыргыстан</h2>
+                <span class="geo__soon">скоро</span>
+            </div>
+            <div class="geo__shadow"></div>
+        </div>
+        <div class="geo__item col-3 relative">
+            <div class="geo__item-content relative flex flex-ai-c flex-jc-c flex-fd-c">
+                <img src="images/uzbekistan.svg" alt="">
+                <h2>Узбекистан</h2>
+                <span class="geo__soon">скоро</span>
+            </div>
+            <div class="geo__shadow"></div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer__top flex flex-ai-fs">
+        <div class="column col-2 flex">
+            <div class="footer__logo column">
+                <img src="~@assets/logo-white.svg" alt="mcKenZee logo">
+            </div>
+            <div class="footer__info">
+                <p class="footer__info-text">
+                    предоставление независимых исследований
+                    и данных по товарам повседневного спроса
+                </p>
+            </div>
+        </div>
+        <div class="column col-2 flex flex-jc-fe">
+            <ul class="footer__links flex flex-wrap">
+                <li class="footer__links-item col-2 flex flex-jc-fe">
+                    <a class="footer__link" href="retail-audit.html">розничный аудит</a>
+                </li>
+                <li class="footer__links-item col-2 flex flex-jc-fe">
+                    <a class="footer__link" href="about-us.html">о нас</a>
+                </li>
+                <li class="footer__links-item col-2 flex flex-jc-fe">
+                    <a class="footer__link" href="micro-regions.html">микрорегионы</a>
+                </li>
+                <li class="footer__links-item col-2 flex flex-jc-fe">
+                    <a class="footer__link" href="contact-us.html">контакты</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer__bottom flex">
+        <div class="footer__copy col-2">
+            <p class="footer__copy-text">©2021. McKenZee STAT Agency. All rights reserved.</p>
+        </div>
+        <div class="col-2 flex flex-jc-fe">
+            <p class="footer__copy-text">Политика конфиденциальности</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

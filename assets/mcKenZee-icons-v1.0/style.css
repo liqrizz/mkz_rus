@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'mcKenZee-icons';
+  src:
+    url('fonts/mcKenZee-icons.ttf?ja86ky') format('truetype'),
+    url('fonts/mcKenZee-icons.woff?ja86ky') format('woff'),
+    url('fonts/mcKenZee-icons.svg?ja86ky#mcKenZee-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.mkz {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'mcKenZee-icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mkz-cell:before {
+  content: "\e90a";
+}
+.mkz-close_mkz:before {
+  content: "\e908";
+}
+.mkz-success:before {
+  content: "\e909";
+}
+.mkz-chart-bar:before {
+  content: "\e905";
+}
+.mkz-down:before {
+  content: "\e900";
+}
+.mkz-bag:before {
+  content: "\e903";
+}
+.mkz-time:before {
+  content: "\e904";
+}
+.mkz-arrow-down:before {
+  content: "\e906";
+}
+.mkz-plus:before {
+  content: "\e907";
+}
+.mkz-burger:before {
+  content: "\e901";
+}
+.mkz-arrow-left:before {
+  content: "\e902";
+}

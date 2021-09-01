@@ -1,0 +1,151 @@
+.main__right-side {
+  background-repeat: no-repeat;
+  background-position: center;
+  mix-blend-mode: normal;
+  background-size: cover;
+  background-color: rgba(37, 35, 83, 0.7);
+  overflow: hidden;
+}
+
+video#mainVideo {
+  height: auto;
+  width: 148%;
+  margin: 0 auto;
+  position: relative;
+  right: 30%;
+  bottom: 10%;
+}
+
+.mask {
+  background: rgba(37, 35, 83, 0.7);
+  mix-blend-mode: normal;
+}
+
+.interactive-maps {
+  padding: 8rem 7rem;
+
+  .decor {
+    left: -30rem;
+    height: 20rem;
+    width: auto;
+    top: 5rem;
+  }
+
+  .cities__item {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+  }
+
+  span.cities__title {
+    top: 1rem;
+  }
+
+  img.mobile_hide {
+    width: 30.1rem;
+    height: 30.1rem;
+  }
+}
+
+.analytics {
+  padding: 0 7rem 7rem;
+  color: var(--white);
+  text-align: center;
+
+  .decor {
+    width: 8rem;
+    left: -19rem;
+    top: 1rem;
+  }
+
+  p.analytics__info-text {
+    text-align: left;
+    display: flex;
+    margin-bottom: 1.5rem;
+  }
+
+  span.mkz.mkz-cell {
+    margin-right: 1.6rem;
+  }
+
+  .analytics__info-text-box>p:last-child {
+    margin-bottom: 0;
+  }
+
+  &__info {
+    gap: 2rem;
+
+    &-item {
+      background-color: var(--white-transparent);
+      padding: 3rem 3rem 4.7rem;
+      border-radius: 2px;
+    }
+
+    &-icon-box {
+      color: var(--gray-icon);
+      font-size: 5rem;
+    }
+
+    &-title {
+      font-size: var(--size-middle);
+      font-weight: var(--weight-bold);
+    }
+
+    &-text {
+      font-size: var(--size-normal);
+      font-weight: var(--weight-medium);
+      color: var(--white-soft);
+      margin-bottom: 0.8rem;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .analytics {
+    padding: 0 4rem 8rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .interactive-maps .cities__item {
+    width: 100%;
+  }
+
+  section.interactive-maps .title-wrapper {
+    padding: 0!important;
+  }
+
+  h1.title-wrapper__title img.decor {
+    left: -9rem;
+    top: -15px;
+  }
+
+  section.interactive-maps {
+    padding: 8rem 1.6rem;
+  }
+
+  .cities__item {
+    height: auto;
+  }
+
+  .title-wrapper {
+    padding: 0 calc(3.5rem - 1.6rem);
+  }
+
+  .analytics {
+    padding: 0 1.6rem 8rem;
+
+    &__info {
+      display: block;
+      &-item {
+        margin-bottom: 1.6rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

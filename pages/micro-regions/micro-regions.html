@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>McKenZee - микрорегионы</title>
+</head>
+<body>
+
+<nav class="nav flex flex-ai-sch">
+    <div class="nav__left-side col-1_8">
+        <div class="nav__logo-wrapper flex">
+            <a class="nav__logo-link" href="/">
+                <img class="nav__logo" src="~@assets/logo.svg" alt="mcKenZee logo">
+            </a>
+        </div>
+    </div>
+    <div class="nav__right-side col-2_2 flex flex-jc-fe flex-ai-sch">
+        <ul class="nav__items flex flex-ai-c">
+            <li class="mobile_show nav__close-item">
+                <div class="nav__close-wrapper">
+                    <img class="nav__logo" src="~@assets/logo.svg" alt="mcKenZee logo">
+                    <span class="nav__close-button">
+                        <span class="mkz mkz-close_mkz"></span>
+                    </span>
+                </div>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="retail-audit.html">розничный аудит</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="micro-regions.html">микрорегионы</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="about-us.html">о нас</a>
+            </li>
+            <li class="nav__item select-lang mobile_hide">
+                <span class="nav__link relative">
+                    ру
+                    <span class="mkz mkz-down"></span>
+                    <ul class="lang-list">
+                        <li class="lang-list__item">
+                            <a href="micro-regions.html">русский</a>
+                        </li>
+                        <li class="lang-list__item">
+                            <a href="https://mckenzee.org/micro-regions.html">english</a>
+                        </li>
+                    </ul>
+                </span>
+            </li>
+
+            <li class="nav__item mobile_show">
+                <a class="nav__link" href="contact-us.html">контакты</a>
+            </li>
+
+            <li class="nav__item select-lang select-lang_mobile mobile_show">
+                <span class="nav__link relative">
+                    русский
+                    <span class="mkz mkz-down"></span>
+                    <ul class="lang-list">
+                        <li class="lang-list__item">
+                            <a href="micro-regions.html">русский</a>
+                        </li>
+                        <li class="lang-list__item">
+                            <a href="https://mckenzee.org/micro-regions.html">english</a>
+                        </li>
+                    </ul>
+                </span>
+            </li>
+        </ul>
+        <a class="nav__link nav__link_contact flex flex-ai-c" href="contact-us.html">контакты</a>
+        <i class="mkz mkz-burger mobile_show flex flex-ai-c"></i>
+    </div>
+</nav>
+
+<section class="main flex">
+    <div class="section-left-side col-1_8 tablet-full flex flex-jc-c flex-ai-c">
+        <div class="section-left-side__content-wrapper pages-title">
+            <h3 class="section-left-side__subtitle">
+                <a href="/">главная /</a>
+            </h3>
+            <h1 class="section-left-side__title">микрорегионы</h1>
+            <h3 class="section-left-side__subtitle">
+                ритейл аудит на уровне <br>
+                кастомизированных микрогеографиях
+            </h3>
+        </div>
+    </div>
+    <div class="main__right-side col-2_2 tablet-none">
+        <video autoplay loop muted id="mainVideo">
+            <source src="~@assets/planet_geo_1.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+
+<section class="interactive-maps">
+    <div class="title-wrapper title-wrapper_margin-bottom title-wrapper_white title-wrapper_center">
+        <h1 class="title-wrapper__title">
+            интерактивные карты <br>
+            Алматы и Нур-Султан
+        </h1>
+        <span class="title-wrapper__border"></span>
+    </div>
+    <div class="interactive-maps__container">
+        <div class="cities flex">
+            <div class="cities__item cities__item_margin-right relative">
+                <div class="cities__item-mask flex flex-jc-c flex-ai-fe">
+                    <span></span>
+                </div>
+                <img class="mobile_hide" hover data-src="~@assets/almaty.gif" src="~@assets/alma-static.gif"
+                     alt="almaty.gif">
+                <img class="mobile_show" src="~@assets/almaty_mobile.gif" alt="almaty map">
+                <span class="cities__title">Алматы</span>
+            </div>
+            <div class="cities__item relative">
+                <div class="cities__item-mask flex flex-jc-c flex-ai-fe">
+                    <span>hover to see</span>
+                </div>
+                <img class="mobile_hide" hover data-src="~@assets/nur-sultan.gif" src="~@assets//nur-static.gif"
+                     alt="nur-sultan.gif">
+                <img class="mobile_show" src="~@assets/nur_mobile.gif" alt="nur-sultan.gif">
+                <span class="cities__title">Нур-Султан</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="analytics">
+    <div class="title-wrapper title-wrapper_margin-bottom title-wrapper_white title-wrapper_center relative">
+        <h1 class="title-wrapper__title">
+            <span class="relative">
+                <img class="decor" src="~@assets/decor.svg" alt="decor.svg">
+                аналитика заточенная для <br>
+                решения sales задач
+            </span>
+        </h1>
+        <span class="title-wrapper__border"></span>
+    </div>
+
+    <div class="analytics__info flex">
+        <div class="analytics__info-item col-3">
+            <div class="analytics__info-icon-box">
+                <span class="mkz mkz-chart-bar"></span>
+            </div>
+            <div class="analytics__info-title-box">
+                <h3 class="analytics__info-title">найдите точки роста продаж</h3>
+            </div>
+            <div class="analytics__info-text-box">
+                <p class="analytics__info-text">
+                    <span class="mkz mkz-cell"></span>
+                    <span>
+                        в каких микрорегионах города
+                        продажи проседают и почему
+                    </span>
+                </p>
+
+                <p class="analytics__info-text">
+                    <span class="mkz mkz-cell"></span>
+                    <span>
+                        где продажи выше, а где ниже
+                        чем у конкурентов и в категории
+                    </span>
+                </p>
+
+                <p class="analytics__info-text">
+                    <span class="mkz mkz-cell"></span>
+                    <span>
+                        какой реальный спрос в каждом
+                        отдельном микрорегионе
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="analytics__info-item col-3">
+            <div class="analytics__info-icon-box">
+                <span class="mkz mkz-time"></span>
+            </div>
+            <div class="analytics__info-title-box">
+                <h3 class="analytics__info-title">сфокусируйтесь на географиях</h3>
+            </div>
+            <div class="analytics__info-text-box">
+                <p class="analytics__info-text">
+                    <span class="mkz mkz-cell"></span>
+                    <span>
+                        в какие микрорегионы направить коммерческие усилия
+                        и работу полевого персонала
+                    </span>
+                </p>
+
+                <p class="analytics__info-text">
+                    <span class="mkz mkz-cell"></span>
+                    <span>
+                        как можно скорректировать дистрибуцию
+                        для увеличения продаж
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="analytics__info-item col-3">
+            <div class="analytics__info-icon-box">
+                <span class="mkz mkz-bag"></span>
+            </div>
+            <div class="analytics__info-title-box">
+                <h3 class="analytics__info-title">адаптируйте портфель продуктов</h3>
+            </div>
+            <div class="analytics__info-text-box">
+                <p class="analytics__info-text">
+                    <span class="mkz mkz-cell"></span>
+                    <span>
+                        насколько эффективна текущая комбинация брендов в разных районах
+                    </span>
+                </p>
+
+                <p class="analytics__info-text">
+                    <span class="mkz mkz-cell"></span>
+                    <span>
+                        как адаптировать портфель
+                        под спрос в конкретных микрорегионов города
+                    </span>
+                </p>
+
+                <p class="analytics__info-text">
+                    <span class="mkz mkz-cell"></span>
+                    <span>
+                        каким образом скорректировать цену в локальных условиях конкретной географии
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="reported reported_light">
+    <div class="title-wrapper title-wrapper_margin-bottom title-wrapper_center">
+        <h1 class="title-wrapper__title">репортируемые факты</h1>
+        <span class="title-wrapper__border"></span>
+    </div>
+
+    <div class="reported__grid">
+        <div class="reported__grid-item">объём продаж</div>
+        <div class="reported__grid-item">поштучные продажи</div>
+        <div class="reported__grid-item">объём продаж в валюте</div>
+        <div class="reported__grid-item reported__grid-item_2d">
+            <span class="reported__grid-item-content">
+                изменения в продажах
+                за период
+            </span>
+        </div>
+        <div class="reported__grid-item">средние цены</div>
+        <div class="reported__grid-item">рыночная доля</div>
+        <div class="reported__grid-item">распроданные товары</div>
+    </div>
+</section>
+
+<section class="video relative flex flex-fd-c flex-jc-c flex-ai-c">
+    <div class="video__bi"></div>
+    <div class="video__content flex flex-fd-c flex-jc-c flex-ai-c">
+        <div class="title-wrapper title-wrapper_center">
+            <h1 class="title-wrapper__title">дэмо отчет</h1>
+            <span class="title-wrapper__border"></span>
+        </div>
+        <i class="video__play"></i>
+    </div>
+    <video id="regions" class="bi_video" controls="controls">
+        <source src="~@assets/PowerBI.mp4">
+    </video>
+</section>
+
+<footer class="footer">
+    <div class="footer__top flex flex-ai-fs">
+        <div class="column col-2 flex">
+            <div class="footer__logo column">
+                <img src="~@assets/logo-white.svg" alt="mcKenZee logo">
+            </div>
+            <div class="footer__info">
+                <p class="footer__info-text">
+                    предоставление независимых исследований
+                    и данных по товарам повседневного спроса
+                </p>
+            </div>
+        </div>
+        <div class="column col-2 flex flex-jc-fe">
+            <ul class="footer__links flex flex-wrap">
+                <li class="footer__links-item col-2 flex flex-jc-fe">
+                    <a class="footer__link" href="retail-audit.html">розничный аудит</a>
+                </li>
+                <li class="footer__links-item col-2 flex flex-jc-fe">
+                    <a class="footer__link" href="about-us.html">о нас</a>
+                </li>
+                <li class="footer__links-item col-2 flex flex-jc-fe">
+                    <a class="footer__link" href="micro-regions.html">микрорегионы</a>
+                </li>
+                <li class="footer__links-item col-2 flex flex-jc-fe">
+                    <a class="footer__link" href="contact-us.html">контакты</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer__bottom flex">
+        <div class="footer__copy col-2">
+            <p class="footer__copy-text">©2021. McKenZee STAT Agency. All rights reserved.</p>
+        </div>
+        <div class="col-2 flex flex-jc-fe">
+            <p class="footer__copy-text">Политика конфиденциальности</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

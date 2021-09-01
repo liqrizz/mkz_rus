@@ -1,0 +1,120 @@
+.main__right-side {
+  background: url('~@assets/team.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.mask {
+  background: rgba(37, 35, 83, 0.7);
+  mix-blend-mode: normal;
+}
+
+.section-container {
+  max-width: 754px;
+}
+
+.contact {
+  padding: 8rem 4rem;
+  &__form {
+    gap: 1.6rem;
+    button {
+      max-width: 36rem;
+    }
+    &-input, &-textarea {
+      border-radius: 2px;
+      font-size: var(--size-normal);
+      color: var(--white);
+      background-color: var(--white-transparent);
+      outline: none;
+      border: 1px solid transparent;
+      padding: 0 1.6rem;
+      &::placeholder {
+        color: var(--white-ghost);
+      }
+
+      &:focus {
+        border: 1px solid var(--yellow)!important;
+      }
+
+      &.touched:invalid {
+        border: 1px solid var(--invalid);
+      }
+    }
+
+    &-input {
+      height: 54px;
+    }
+
+    &-textarea {
+      padding: 1.6rem;
+      resize: none;
+      height: 22rem;
+    }
+  }
+}
+
+.dialog {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(37, 35, 83, 0.95);
+  transform: translateY(-100%);
+  opacity: 0;
+
+  &.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  &__container {
+    text-align: center;
+    padding: 1.5rem;
+    width: 30rem;
+    border-radius: 2px;
+    background-color: var(--white);
+
+    .mkz {
+      &-close_mkz {
+        font-size: 1.5rem;
+        color: var(--gray-secondary);
+        cursor: pointer;
+      }
+      &-success {
+        color: var(--success);
+        font-size: 3rem;
+      }
+    }
+  }
+
+  &__close {
+    margin-bottom: 0.6rem;
+  }
+
+  &__message {
+    margin-bottom: 6.8rem;
+    &-title {
+      color: var(--black-medium);
+      font-weight: var(--weight-medium);
+      font-size: var(--size-middle);
+      margin-top: 2.6rem;
+      margin-bottom: 0.8rem;
+    }
+  }
+  &__button {
+    button {
+      display: block;
+      width: 100%;
+      max-width: 22.2rem;
+      margin: 0 auto;
+      padding: 1.4rem 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .contact {
+    padding: 8rem 1.6rem;
+  }
+}
