@@ -79,9 +79,9 @@ video#mainVideo {
     gap: 2rem;
 
     &-item {
-      background-color: var(--white-transparent);
       padding: 3rem 3rem 4.7rem;
       border-radius: 2px;
+      border: 1px solid var(--white-border);
     }
 
     &-icon-box {
