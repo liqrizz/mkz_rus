@@ -58,7 +58,8 @@
 }
 
 .geo {
-  background-color: var(--white);
+  background: url("images/geo.jpg") 50% 50% no-repeat;
+  background-size: cover;
   padding: 11.5rem 0;
 
   &__title {
@@ -88,9 +89,11 @@
     color: var(--black-deep);
     border-radius: 0.4rem;
     padding: 0.5rem 2rem;
-    font-size: var(--size-normal);
+    font-size: var(--size-small);
+    font-weight: var(--weight-bold);
     top: 0.8rem;
     right: 0.8rem;
+    text-transform: uppercase;
   }
 
   &__shadow {
@@ -103,6 +106,10 @@
     right: -10rem;
     height: 11.4rem;
     max-width: 20rem;
+  }
+  h2 {
+    font-size: 2rem;
+    color: var(--blue-dark);
   }
 }
 
