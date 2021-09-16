@@ -143,6 +143,11 @@ module.exports = {
                                 tag: 'video',
                                 attribute: 'data-src',
                                 type: 'src'
+                            },
+                            {
+                                tag: 'link',
+                                attribute: 'href',
+                                type: 'src'
                             }
                         ],
                     },
