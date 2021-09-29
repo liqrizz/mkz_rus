@@ -101,3 +101,5 @@ videoJs({
     id: 'retail',
     videoTextContainer: '.video__content'
 });
+
+

@@ -77,11 +77,20 @@ p {
 }
 
 .nav {
-  position: absolute;
+  position: fixed;
+  width: 100%;
   top: 0;
   left: 0;
   right: 0;
   z-index: 999;
+  transition: all 0.3s ease-out;
+  &__right-side {
+    background-color: #252454;
+  }
+  &_colored {
+    background-color: #252454;
+    box-shadow: 0px 2px 10px #00000033;
+  }
 
   &__logo {
     width: 16.7rem;
@@ -307,9 +316,15 @@ a {
     color: var(--white);
     font-size: var(--size-normal);
     font-weight: var(--weight-medium);
-
-    &:hover {
-     text-decoration: underline;
+    &::after {
+      display: block;
+      content: "";
+      border-bottom: 1px solid var(--white);
+      transform: scale(0);
+      transition: all 250ms ease-in-out;
+    }
+    &:hover::after {
+      transform: scale(1);
     }
 
     &_contact {
@@ -319,6 +334,7 @@ a {
       transition: 0.2s ease-in;
       &:hover {
         background-color: var(--yellow-hover);
+        border-bottom: none;
         text-decoration: none;
       }
     }
@@ -351,7 +367,7 @@ ul.lang-list {
   display: none;
   position: absolute;
   background: white;
-  padding: 0 3rem;
+  padding: 0 1.5rem;
   border-radius: 0.3rem;
   left: calc(50% - 63px);
   top: 28px;
@@ -361,16 +377,37 @@ ul.lang-list {
 }
 
 li.lang-list__item a {
+  display: block;
   color: var(--black-medium);
   font-size: var(--size-normal);
+  transition: all 250ms;
 }
 
 li.lang-list__item {
   margin: 1rem 0;
 }
 
-li.lang-list__item:hover a {
-  text-decoration: underline;
+.ic-eng::before, .ic-rus::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
+.ic-eng::before {
+  background: url("./eng-flag.svg") 0 0 no-repeat;
+  background-size: 20px;
+}
+
+.ic-rus::before {
+  background: url("./rus-flag.svg") 0 0 no-repeat;
+  background-size: 20px;
+}
+
+li.lang-list__item:hover a{
+  color: var(--blue-dark);
 }
 
 .footer {
@@ -444,6 +481,9 @@ li.lang-list__item:hover a {
   .nav {
     &__left-side {
       flex-basis: 10%;
+    }
+    &__right-side {
+      background-color: transparent;
     }
 
     &__link {

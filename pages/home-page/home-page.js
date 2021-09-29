@@ -14,14 +14,14 @@ let scrollTop = 0;
 
 const sas = document.querySelector('.audit__decor_big');
 
-window.onscroll = () => {
+window.addEventListener('scroll', () => {
     if (count % 2 === 0) {
         scrollTop = document.documentElement.scrollTop;
         lazyLoading(lazyBlock);
         sas.style.transform = `translateY(${-scrollTop / 40}%)`;
     }
     count++;
-};
+})
 
 /**
  * @type {HTMLVideoElement}

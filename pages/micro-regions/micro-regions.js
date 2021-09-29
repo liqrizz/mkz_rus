@@ -12,3 +12,4 @@ videoJs({
     id: 'regions',
     videoTextContainer: '.video__content'
 });
+

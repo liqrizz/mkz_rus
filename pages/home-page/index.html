@@ -5,16 +5,27 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>McKenZee - статистическое агентство</title>
+    <title>Независимые исследования и точные данные по FMCG - McKenZee Stat Agency</title>
+    <meta name="description" content="McKenZee Stat Agency предоставляет точные и независимые данные о реальных продажах товаров повседневного спроса. Проводит розничный аудит на уровне микро-регионов в городах Алматы и Нур-Султан">
+    <link rel="canonical" href="https://mckenzee.org/ru/">
     <link rel="icon" href="~@assets/favicon.png" type="image/png">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQVVFE3BE5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-TQVVFE3BE5');
+    </script>
 </head>
 <body>
 
-<nav class="nav flex flex-ai-sch">
+<nav class="nav flex flex-ai-sch" id="navbar">
     <div class="nav__left-side col-1_8">
         <div class="nav__logo-wrapper flex">
             <a class="nav__logo-link" href="/ru">
-                <img class="nav__logo" src="~@assets/logo.svg" alt="mcKenZee logo">
+                <img class="nav__logo" src="~@assets/logo.svg" alt="mcKenZee logo" id="logo">
             </a>
         </div>
     </div>
@@ -43,10 +54,10 @@
                     <span class="mkz mkz-down"></span>
                     <ul class="lang-list">
                         <li class="lang-list__item">
-                            <a href="/ru">русский</a>
+                            <a href="/ru" class="ic-rus">русский</a>
                         </li>
                         <li class="lang-list__item">
-                            <a href="/">english</a>
+                            <a href="/" class="ic-eng">english</a>
                         </li>
                     </ul>
                 </span>
@@ -82,7 +93,7 @@
             <h1 class="section-left-side__title big">точные данные важны!</h1>
 
             <p class="section-left-side__info">
-                оцифрованный данные из более 4000 <span class="mobile_show">&nbsp;</span><br class="mobile_show">
+                оцифрованные данные из более 4000 <span class="mobile_show">&nbsp;</span><br class="mobile_show">
                 продовольственных торговых точек по всему <span class="mobile_show">&nbsp;</span><br class="mobile_show">
                 Казахстану — это основной строительный блок <span class="mobile_show">&nbsp;</span><br class="mobile_show">
                 всего, что мы делаем в аналитике
@@ -180,7 +191,7 @@
         <div class="geo__item col-3 relative">
             <div class="geo__item-content relative flex flex-ai-c flex-jc-c flex-fd-c">
                 <img src="images/kyrgyzstan.svg" alt="">
-                <h2>Кыргыстан</h2>
+                <h2>Кыргызстан</h2>
                 <span class="geo__soon">скоро</span>
             </div>
             <div class="geo__shadow"></div>

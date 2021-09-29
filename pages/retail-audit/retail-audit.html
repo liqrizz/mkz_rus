@@ -5,17 +5,29 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>McKenZee - розничный аудит</title>
+    <title>Розничный аудит - McKenZee Stat Agency</title>
+    <meta name="description"
+          content="McKenZee Stat Agency предоставляет в отчетах такие факты как объемы продаж, поштучные продажи, объем продаж в валюте, средние цены, рыночная доля, распроданные товары, изменения в продажах за период ">
+    <link rel="canonical" href="https://mckenzee.org/ru/retail-audit.html">
     <link rel="icon" href="~@assets/favicon.png" type="image/png">
     <script src="retail-audit.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQVVFE3BE5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-TQVVFE3BE5');
+    </script>
 </head>
 <body>
 
-<nav class="nav flex flex-ai-sch">
+<nav class="nav flex flex-ai-sch" id="navbar">
     <div class="nav__left-side col-1_8">
         <div class="nav__logo-wrapper flex">
             <a class="nav__logo-link" href="/ru">
-                <img class="nav__logo" src="~@assets/logo.svg" alt="mcKenZee logo">
+                <img class="nav__logo" src="~@assets/logo.svg" alt="mcKenZee logo" id="logo">
             </a>
         </div>
     </div>
@@ -44,10 +56,10 @@
                     <span class="mkz mkz-down"></span>
                     <ul class="lang-list">
                         <li class="lang-list__item">
-                            <a href="/ru/retail-audit.html">русский</a>
+                            <a href="/ru/retail-audit.html" class="ic-rus">русский</a>
                         </li>
                         <li class="lang-list__item">
-                            <a href="/retail-audit.html">english</a>
+                            <a href="/retail-audit.html" class="ic-eng">english</a>
                         </li>
                     </ul>
                 </span>
@@ -81,7 +93,7 @@
     <div class="section-left-side col-1_8 tablet-full flex flex-jc-c flex-ai-c">
         <div class="section-left-side__content-wrapper pages-title">
             <h3 class="section-left-side__subtitle">
-                <a href="/">главная /</a>
+                <a href="/ru">главная /</a>
             </h3>
             <h1 class="section-left-side__title">розничный аудит</h1>
             <h3 class="section-left-side__subtitle">
